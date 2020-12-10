@@ -2,4 +2,9 @@
     <string name="app_name">FarmaApp</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="FarmaApp">Farma App</string>
+    <string name="FarmaTips">Farma Tips</string>
+    <string name="RRSS">Redes Sociales</string>
+    <string name="medicamentos">Medicamentos</string>
+    <string name="buscadorFarm">Buscador de Farmacias</string>
 </resources>

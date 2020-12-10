@@ -1,4 +1,4 @@
-package com.example.farmaapp;
+package com.example.farmaapp.Controlador;
 
 import android.os.Bundle;
 
@@ -8,17 +8,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class MainFragment extends Fragment {
+import com.example.farmaapp.R;
 
 
-    public MainFragment() {
+public class FarmaTips extends Fragment {
+
+
+
+    public FarmaTips() {
         // Required empty public constructor
     }
 
-       @Override
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main, container, false);
+        return inflater.inflate(R.layout.fragment_farma_tips, container, false);
     }
 }
