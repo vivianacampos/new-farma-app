@@ -1,6 +1,8 @@
 package com.example.farmaapp.Controlador;
 
+import android.content.Intent;
 import android.os.Bundle;
+import com.example.farmaapp.Controlador.Mapa;
 
 import androidx.fragment.app.Fragment;
 
@@ -23,4 +25,5 @@ public class MainFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_main, container, false);
     }
+
 }

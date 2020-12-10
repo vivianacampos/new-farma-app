@@ -10,9 +10,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.example.farmaapp.Controlador.MainFragment;
+import com.example.farmaapp.Controlador.Mapa;
 import com.example.farmaapp.Controlador.PagerController;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
@@ -24,9 +26,7 @@ public class MainActivity extends AppCompatActivity {
     PagerController pagerAdapter;
 
     FragmentTransaction transaction;
-    Fragment fragmentPrincipal, fragmentFarm, fragmentFarmaTips, fragmentMed  ;
-
-
+    Fragment fragmentPrincipal, fragmentFarm, fragmentFarmaTips, fragmentMed;
 
 
     @Override
@@ -48,13 +48,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
-                if(tab.getPosition() == 0){
+                if (tab.getPosition() == 0) {
                     pagerAdapter.notifyDataSetChanged();
                 }
-                if(tab.getPosition() == 1){
+                if (tab.getPosition() == 1) {
                     pagerAdapter.notifyDataSetChanged();
                 }
-                if(tab.getPosition() == 2){
+                if (tab.getPosition() == 2) {
                     pagerAdapter.notifyDataSetChanged();
                 }
             }
@@ -72,24 +72,25 @@ public class MainActivity extends AppCompatActivity {
         });
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
     }
-    public boolean onCreateOptionsMenu (Menu m){
+
+    public boolean onCreateOptionsMenu(Menu m) {
         getMenuInflater().inflate(R.menu.menuopciones, m);
         return true;
     }
 
     // menu de opciones
-    public boolean onOptionsItemSelected (MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item) {
         int i = item.getItemId();
         switch (i) {
             case R.id.menuAjustes:
                 Toast.makeText(this, "Abriendo Ajustes", Toast.LENGTH_SHORT).show();
-                Intent int1 = new Intent(  this, MenuAjustes.class);
+                Intent int1 = new Intent(this, MenuAjustes.class);
                 startActivity(int1);
                 break;
 
             case R.id.menuHome:
                 Toast.makeText(this, "Redireccionando al Home", Toast.LENGTH_SHORT).show();
-                Intent int4 = new Intent(  this, MainActivity.class);
+                Intent int4 = new Intent(this, MainActivity.class);
                 startActivity(int4);
                 break;
 
@@ -98,4 +99,8 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void abrirMapa(View view) {
+        Intent i = new Intent(this, Mapa.class);
+        startActivity(i);
+    }
 }

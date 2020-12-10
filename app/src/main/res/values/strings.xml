@@ -11,4 +11,6 @@
     <string name="home">Home</string>
     <string name="bienvenida">Bienvenido a Farma App</string>
     <string name="pregunta">¿Que desea hacer?</string>
+    <string name="buscar_farmacias">Buscar Farmacias</string>
+    <string name="buescar_medicamento">Buescar Medicamento</string>
 </resources>
