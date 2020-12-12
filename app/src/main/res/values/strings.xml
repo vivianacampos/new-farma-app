@@ -7,10 +7,12 @@
     <string name="RRSS">Redes Sociales</string>
     <string name="medicamentos">Medicamentos</string>
     <string name="buscadorFarm">Buscador de Farmacias</string>
-    <string name="ajustes">Ajustes</string>
+    <string name="ajustes1">Ajustes</string>
     <string name="home">Home</string>
     <string name="bienvenida">Bienvenido a Farma App</string>
     <string name="pregunta">¿Que desea hacer?</string>
     <string name="buscar_farmacias">Buscar Farmacias</string>
     <string name="buescar_medicamento">Buescar Medicamento</string>
+    <string name="buscadorMed">Buscador de Medicamentos</string>
+    <string name="ajustes">Ajustes</string>
 </resources>

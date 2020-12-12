@@ -1,8 +1,6 @@
 package com.example.farmaapp.Controlador;
 
-import android.content.Intent;
 import android.os.Bundle;
-import com.example.farmaapp.Controlador.Mapa;
 
 import androidx.fragment.app.Fragment;
 

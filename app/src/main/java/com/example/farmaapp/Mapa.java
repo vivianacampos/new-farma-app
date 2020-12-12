@@ -1,4 +1,4 @@
-package com.example.farmaapp.Controlador;
+package com.example.farmaapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,4 +13,7 @@ public class Mapa extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mapa);
     }
+    
+
+
 }

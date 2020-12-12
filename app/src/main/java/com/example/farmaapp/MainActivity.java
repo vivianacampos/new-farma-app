@@ -14,7 +14,6 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.farmaapp.Controlador.MainFragment;
-import com.example.farmaapp.Controlador.Mapa;
 import com.example.farmaapp.Controlador.PagerController;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
@@ -72,13 +71,12 @@ public class MainActivity extends AppCompatActivity {
         });
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
     }
-
+    // menu de opciones
     public boolean onCreateOptionsMenu(Menu m) {
         getMenuInflater().inflate(R.menu.menuopciones, m);
         return true;
     }
 
-    // menu de opciones
     public boolean onOptionsItemSelected(MenuItem item) {
         int i = item.getItemId();
         switch (i) {
@@ -90,17 +88,19 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.menuHome:
                 Toast.makeText(this, "Redireccionando al Home", Toast.LENGTH_SHORT).show();
-                Intent int4 = new Intent(this, MainActivity.class);
-                startActivity(int4);
+                Intent int2 = new Intent(this, MainActivity.class);
+                startActivity(int2);
                 break;
-
-
         }
         return super.onOptionsItemSelected(item);
     }
 
     public void abrirMapa(View view) {
         Intent i = new Intent(this, Mapa.class);
+        startActivity(i);
+    }
+    public void abrirBuscadorMed(View view) {
+        Intent i = new Intent(this, BuscadorMed.class);
         startActivity(i);
     }
 }

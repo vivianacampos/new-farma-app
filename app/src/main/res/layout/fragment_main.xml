@@ -62,6 +62,7 @@
         android:layout_marginStart="257dp"
         android:layout_marginLeft="257dp"
         android:layout_marginTop="508dp"
+        android:onClick="abrirBuscadorMed"
         android:src="@drawable/icono_farmacia50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

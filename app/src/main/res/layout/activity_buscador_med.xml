@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Mapa">
+    tools:context=".BuscadorMed">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="173dp"
-        android:layout_marginLeft="173dp"
-        android:layout_marginTop="171dp"
-        android:text="Soy el Mapa!!"
+        android:layout_marginStart="118dp"
+        android:layout_marginLeft="118dp"
+        android:layout_marginTop="135dp"
+        android:text="@string/buscadorMed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
