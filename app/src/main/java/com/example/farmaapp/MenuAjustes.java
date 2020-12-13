@@ -35,7 +35,14 @@ public class MenuAjustes extends AppCompatActivity {
                 Intent int2 = new Intent(this, MainActivity.class);
                 startActivity(int2);
                 break;
-        }
+
+            case R.id.menuMed:
+        Toast.makeText(this, "Abriendo mantenedor de medicamentos", Toast.LENGTH_SHORT).show();
+        Intent int3 = new Intent(this, CrudMed.class);
+        startActivity(int3);
+        break;
+    }
+
         return super.onOptionsItemSelected(item);
     }
 }

@@ -16,4 +16,13 @@
     <string name="buscadorMed">Buscador de Medicamentos</string>
     <string name="ajustes">Ajustes</string>
     <string name="title_activity_mapa">Map</string>
+    <string name="agregar_medicamento">Agregar Medicamento</string>
+    <string name="id">ID</string>
+    <string name="formato">Formato</string>
+    <string name="valor">Valor</string>
+    <string name="agregar">Agregar</string>
+    <string name="miligramos">Miligramos</string>
+    <string name="buscar">Buscar</string>
+    <string name="modificar">Modificar</string>
+    <string name="eliminar">Eliminar</string>
 </resources>

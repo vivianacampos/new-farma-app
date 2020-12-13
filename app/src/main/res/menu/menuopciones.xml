@@ -12,4 +12,7 @@
         android:title="@string/home"
         android:visible="true"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/menuMed"
+        android:title="@string/medicamentos" />
 </menu>
