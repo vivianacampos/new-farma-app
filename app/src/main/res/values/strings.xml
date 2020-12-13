@@ -15,4 +15,5 @@
     <string name="buescar_medicamento">Buescar Medicamento</string>
     <string name="buscadorMed">Buscador de Medicamentos</string>
     <string name="ajustes">Ajustes</string>
+    <string name="title_activity_mapa">Map</string>
 </resources>
